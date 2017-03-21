@@ -1,0 +1,21 @@
+<h1>Say#hello</h1>
+<p> What time is it?</p>
+It is <%= @time %>
+<p>
+Say <a href="/say/Goodbye"> Goodbye </a>
+</p>
+<p>
+<%= link_to "Goodbye", say_Goodbye_path%>
+</p>
+
+<p>
+<%= @files %>
+</p>
+
+<p>
+<ul>
+<% for n in @files %>
+	<li>file name is <%= n %> </li>
+<% end %>
+</ul>
+</p>
